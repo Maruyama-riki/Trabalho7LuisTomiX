@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore – Seja Membro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-topo">
+      <a href="index.html" class="logo"><img src="logo.png" alt="TechStore"></a>
+      <div class="busca">
+        <input type="text" id="buscaInput" placeholder="Buscar produtos..." />
+        <button onclick="buscarProduto()">🔍</button>
+      </div>
+      <a href="carrinho.html" class="btn-carrinho">
+        🛒 Carrinho <span class="badge" id="badgeCount">0</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="tvs.html">TVs</a>
+      <a href="perifericos.html">Periféricos</a>
+      <a href="eletro.html">Eletrodomésticos</a>
+      <a href="camisetas.html">Camisetas</a>
+      <a href="membro.html" class="ativo">Seja Membro</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+
+  <!-- =====================================================
+       CONTEÚDO: SEJA MEMBRO
+       ===================================================== -->
+  <div class="secao">
+    <div class="membro-container">
+
+      <h2>⭐ Seja um Membro TechStore</h2>
+      <p>Cadastre-se gratuitamente e aproveite benefícios exclusivos!</p>
+
+      <!-- Lista de benefícios -->
+      <ul class="membro-beneficios">
+        <li>✅ Frete grátis em todas as compras</li>
+        <li>✅ Acesso antecipado às promoções</li>
+        <li>✅ 5% de desconto em todos os produtos</li>
+        <li>✅ Suporte prioritário</li>
+        <li>✅ Ofertas exclusivas para membros</li>
+      </ul>
+
+      <!-- Formulário de cadastro -->
+      <div class="form-membro">
+        <input type="text" placeholder="Seu nome completo" />
+        <input type="email" placeholder="Seu e-mail" />
+        <input type="password" placeholder="Crie uma senha" />
+        <button class="btn-principal btn-bloco" onclick="cadastrarMembro()">
+          Quero ser Membro!
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>⚡ TechStore</strong> – Tecnologia com qualidade e preço justo.</p>
+      <p>© 2025 TechStore. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    /* Função do formulário de cadastro */
+    function cadastrarMembro() {
+      alert("Cadastro realizado com sucesso! Bem-vindo(a) à TechStore! ⭐");
+    }
+  </script>
+</body>
+</html>

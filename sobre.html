@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore – Sobre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-topo">
+      <a href="index.html" class="logo"><img src="logo.png" alt="TechStore"></a>
+      <div class="busca">
+        <input type="text" id="buscaInput" placeholder="Buscar produtos..." />
+        <button onclick="buscarProduto()">🔍</button>
+      </div>
+      <a href="carrinho.html" class="btn-carrinho">
+        🛒 Carrinho <span class="badge" id="badgeCount">0</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="tvs.html">TVs</a>
+      <a href="perifericos.html">Periféricos</a>
+      <a href="eletro.html">Eletrodomésticos</a>
+      <a href="camisetas.html">Camisetas</a>
+      <a href="membro.html">Seja Membro</a>
+      <a href="sobre.html" class="ativo">Sobre</a>
+    </nav>
+  </header>
+
+
+  <!-- =====================================================
+       CONTEÚDO: SOBRE A EMPRESA
+       ===================================================== -->
+  <div class="secao">
+    <h2 class="secao-titulo">Sobre a TechStore</h2>
+
+    <div class="sobre-grid">
+
+      <div class="sobre-card">
+        <span class="icone">⚡</span>
+        <h3>Quem Somos</h3>
+        <p>
+          A TechStore é uma loja especializada em produtos eletrônicos,
+          oferecendo notebooks, periféricos e acessórios de informática
+          com qualidade e preço acessível.
+        </p>
+      </div>
+
+      <div class="sobre-card">
+        <span class="icone">🎯</span>
+        <h3>Nossa Missão</h3>
+        <p>
+          Entregar tecnologia com qualidade, segurança e preços justos,
+          tornando a tecnologia acessível para todos os nossos clientes.
+        </p>
+      </div>
+
+      <div class="sobre-card">
+        <span class="icone">🚚</span>
+        <h3>Entrega Rápida</h3>
+        <p>
+          Enviamos para todo o Brasil com agilidade e segurança.
+          Seu produto chega em perfeito estado e no prazo combinado.
+          Frete grátis acima de R$ 500!
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>⚡ TechStore</strong> – Tecnologia com qualidade e preço justo.</p>
+      <p>© 2025 TechStore. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

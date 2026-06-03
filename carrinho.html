@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore – Carrinho</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-topo">
+      <a href="index.html" class="logo"><img src="logo.png" alt="TechStore"></a>
+      <div class="busca">
+        <input type="text" id="buscaInput" placeholder="Buscar produtos..." />
+        <button onclick="buscarProduto()">🔍</button>
+      </div>
+      <a href="carrinho.html" class="btn-carrinho">
+        🛒 Carrinho <span class="badge" id="badgeCount">0</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="tvs.html">TVs</a>
+      <a href="perifericos.html">Periféricos</a>
+      <a href="eletro.html">Eletrodomésticos</a>
+      <a href="camisetas.html">Camisetas</a>
+      <a href="membro.html">Seja Membro</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+
+  <!-- =====================================================
+       CONTEÚDO: CARRINHO DE COMPRAS
+       Tudo é gerado automaticamente pelo script.js
+       ===================================================== -->
+  <div class="secao">
+    <h2 class="secao-titulo">🛒 Meu Carrinho</h2>
+
+    <!-- Layout de duas colunas: itens + resumo -->
+    <div class="carrinho-layout">
+
+      <!-- Lista de produtos no carrinho (preenchida pelo JS) -->
+      <div class="carrinho-itens" id="itensCarrinho"></div>
+
+      <!-- Resumo do pedido -->
+      <aside class="carrinho-resumo">
+        <h3>Resumo do Pedido</h3>
+
+        <div class="resumo-linha">
+          <span>Subtotal</span>
+          <span id="subtotal">R$ 0,00</span>
+        </div>
+
+        <div class="resumo-linha">
+          <span>Frete</span>
+          <span id="frete">R$ 0,00</span>
+        </div>
+
+        <hr />
+
+        <div class="resumo-linha total">
+          <span>Total</span>
+          <span id="total">R$ 0,00</span>
+        </div>
+
+        <button class="btn-principal btn-bloco" onclick="finalizarCompra()">
+          Finalizar Compra
+        </button>
+
+        <a href="index.html" class="btn-secundario btn-bloco">
+          ← Continuar Comprando
+        </a>
+      </aside>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>⚡ TechStore</strong> – Tecnologia com qualidade e preço justo.</p>
+      <p>© 2025 TechStore. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

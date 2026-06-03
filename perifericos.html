@@ -3,31 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechStore – Início</title>
+  <title>TechStore – Periféricos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- =====================================================
-       HEADER (cabeçalho) - igual em todas as páginas
-       Só mude class="ativo" no link desta página!
-       ===================================================== -->
   <header class="header">
     <div class="header-topo">
-
       <a href="index.html" class="logo"><img src="logo.png" alt="TechStore"></a>
-
+      <div class="busca">
+        <input type="text" id="buscaInput" placeholder="Buscar produtos..." />
+        <button onclick="buscarProduto()">🔍</button>
+      </div>
       <a href="carrinho.html" class="btn-carrinho">
-        🛒 Carrinho
-        <span class="badge" id="badgeCount">0</span>
+        🛒 Carrinho <span class="badge" id="badgeCount">0</span>
       </a>
-
     </div>
-
     <nav class="nav">
-      <a href="index.html" class="ativo">Início</a>
+      <a href="index.html">Início</a>
       <a href="tvs.html">TVs</a>
-      <a href="perifericos.html">Periféricos</a>
+      <a href="perifericos.html" class="ativo">Periféricos</a>
       <a href="eletro.html">Eletrodomésticos</a>
       <a href="camisetas.html">Camisetas</a>
       <a href="membro.html">Seja Membro</a>
@@ -36,19 +31,12 @@
   </header>
 
 
-  <section class="banner">
-    <img src="banner.png" alt="Banner TechStore">
-  </section>
+  <div class="secao">
+    <h2 class="secao-titulo">🖱️ Periféricos</h2>
+    <div class="grade-produtos" id="listaProdutos"></div>
+  </div>
 
 
-
-  <!-- =====================================================
-       PRODUTOS EM DESTAQUE
-       Os produtos são adicionados pelo JavaScript (script.js)
-       ===================================================== -->
-  <!-- =====================================================
-       RODAPÉ - igual em todas as páginas
-       ===================================================== -->
   <footer class="footer">
     <div class="footer-inner">
       <p><strong>⚡ TechStore</strong> – Tecnologia com qualidade e preço justo.</p>
