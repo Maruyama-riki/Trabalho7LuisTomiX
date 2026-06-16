@@ -1,14 +1,14 @@
 const PRODUTOS = [
-  { id: 1, nome: "Notebook Lenovo IdeaPad 3",    categoria: "notebooks",       preco: 2899.90, parcelas: 12, imagem: "https://placehold.co/300x200?text=Lenovo" },
-  { id: 2, nome: "Notebook Dell Inspiron 15",     categoria: "notebooks",       preco: 3499.00, parcelas: 12, imagem: "https://placehold.co/300x200?text=Dell" },
-  { id: 3, nome: "TV Samsung 50\" 4K QLED",       categoria: "tvs",             preco: 2799.00, parcelas: 12, imagem: "https://placehold.co/300x200?text=TV+Samsung" },
-  { id: 4, nome: "TV LG 55\" OLED Smart",         categoria: "tvs",             preco: 4199.00, parcelas: 12, imagem: "https://placehold.co/300x200?text=TV+LG" },
-  { id: 5, nome: "Mouse Logitech MX Master 3",    categoria: "perifericos",     preco: 479.90,  parcelas: 6,  imagem: "https://placehold.co/300x200?text=Mouse" },
-  { id: 6, nome: "Teclado Mecânico Redragon",     categoria: "perifericos",     preco: 299.00,  parcelas: 6,  imagem: "https://placehold.co/300x200?text=Teclado" },
-  { id: 7, nome: "Micro-ondas Electrolux 31L",    categoria: "eletrodomesticos",preco: 649.00,  parcelas: 10, imagem: "https://placehold.co/300x200?text=Micro-ondas" },
-  { id: 8, nome: "Geladeira Brastemp Frost Free",  categoria: "eletrodomesticos",preco: 3299.00, parcelas: 12, imagem: "https://placehold.co/300x200?text=Geladeira" },
-  { id: 9, nome: "Camiseta TechStore Preta P",    categoria: "camisetas",       preco: 59.90,   parcelas: 2,  imagem: "https://placehold.co/300x200?text=Camiseta+P" },
-  { id: 10, nome: "Camiseta TechStore Branca M",  categoria: "camisetas",       preco: 59.90,   parcelas: 2,  imagem: "https://placehold.co/300x200?text=Camiseta+M" },
+  { id: 1, nome: "Notebook Lenovo IdeaPad 3",    categoria: "notebooks",       preco: 2899.90, parcelas: 12, imagem: "https://imgs.search.brave.com/h78A0GfovhiteBkgZ7NK4rd-8wsxb4_OiAsX8nmne3s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wb3J0/YXRpbGNoaWxlLmNv/bS8yMjkyMS1tZWRp/dW1fZGVmYXVsdC9u/b3RlYm9vay1sZW5v/dm8taWRlYXBhZC0z/LmpwZw" },
+  { id: 2, nome: "Notebook Dell Inspiron 15",     categoria: "notebooks",       preco: 3499.00, parcelas: 12, imagem: "https://imgs.search.brave.com/g8YLsLhLfKM7vqBeJTbiE6JLmaDk7RBTsu3oBQFVhIk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnBvbnRvZnJpby5j/b20uYnIvMTU2MzI0/ODY5Ny8xeGcuanBn" },
+  { id: 3, nome: "TV Samsung 50\" 4K QLED",       categoria: "tvs",             preco: 2799.00, parcelas: 12, imagem: "https://imgs.search.brave.com/yZsINAqORSj7Oj6m8p8y__4GtjKCUWlWJtfRG_UfxMY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdz/LnBvbnRvZnJpby5j/b20uYnIvMTU3NjA3/MDIyNC8xeGcuanBn" },
+  { id: 4, nome: "TV LG 55\" OLED Smart",         categoria: "tvs",             preco: 4199.00, parcelas: 12, imagem: "https://imgs.search.brave.com/dwpCMLLf30Xk3w6VaMwUr99Q9O8E7zeQxLf4HGfRswQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/b2x4LmNvbS5ici90/aHVtYnM3MDB4NTAw/LzQ3LzQ3NDY2MzE1/NDkyODk3NS53ZWJw" },
+  { id: 5, nome: "Mouse Logitech MX Master 3",    categoria: "perifericos",     preco: 479.90,  parcelas: 6,  imagem: "https://imgs.search.brave.com/16VYocqkyKWwe07Zn0ChOrNBVhMzfyyfM0fG1QmMFss/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMzB1/OXdpbTFiYXJmNi5j/bG91ZGZyb250Lm5l/dC9DdXN0b20vQ29u/dGVudC9Qcm9kdWN0/cy8xMC8wMC8xMDAw/OTc5X25hYzAxMTEy/MV9tNF82MzgwNjYz/NzEzODQyNTgxNTEu/d2VicA" },
+  { id: 6, nome: "Teclado Mecânico Redragon",     categoria: "perifericos",     preco: 299.00,  parcelas: 6,  imagem: "https://imgs.search.brave.com/yQ109NoFoJqh3n6aMIbBjJguMlc12UM8zDGWWiYFofU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9RX05QXzJY/XzczMDQ1My1NTEEx/MDAwMjgxMzIzODdf/MTIyMDI1LUUud2Vi/cA" },
+  { id: 7, nome: "Micro-ondas Electrolux 31L",    categoria: "eletrodomesticos",preco: 649.00,  parcelas: 10, imagem: "https://imgs.search.brave.com/I4O0CgltUKoLzUahTh4vzglal82txK1t6kbBOUy63HA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF85/NjI2NzQtTUxBNTI0/MTgxNDAyMThfMTEy/MDIyLU8ud2VicA" },
+  { id: 8, nome: "Geladeira Brastemp Frost Free",  categoria: "eletrodomesticos",preco: 3299.00, parcelas: 12, imagem: "https://imgs.search.brave.com/HC6YihbPy4qyA7wZoZOQjqPGD_85FpRNRl8c6W98aG0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJpZ2VsYXIuY29t/LmJyL2Njc3RvcmUv/djEvaW1hZ2VzLz9z/b3VyY2U9L2ZpbGUv/djc5NTcyMDc0Nzk2/Mzg1Mzg2MzcvcHJv/ZHVjdHMva2l0Mjkw/N18xMC5qcGcmaGVp/Z2h0PTQ3NSZ3aWR0/aD00NzU" },
+  { id: 9, nome: "Camiseta TechStore Preta P",    categoria: "camisetas",       preco: 59.90,   parcelas: 2,  imagem: "tomixMulher.jpeg" },
+  { id: 10, nome: "Camiseta TechStore Branca M",  categoria: "camisetas",       preco: 59.90,   parcelas: 2,  imagem: "tomixHomem.jpeg" },
 ];
 
 function getCarrinho() {
