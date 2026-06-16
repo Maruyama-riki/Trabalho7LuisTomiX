@@ -11,8 +11,6 @@ const PRODUTOS = [
   { id: 10, nome: "Camiseta TechStore Branca M",  categoria: "camisetas",       preco: 59.90,   parcelas: 2,  imagem: "https://placehold.co/300x200?text=Camiseta+M" },
 ];
 
-// --- CARRINHO ---
-
 function getCarrinho() {
   return JSON.parse(localStorage.getItem("techstore_carrinho") || "[]");
 }
@@ -53,8 +51,6 @@ function atualizarBadge() {
   if (badge) badge.textContent = getCarrinho().reduce((s, i) => s + i.quantidade, 0);
 }
 
-// --- RENDERIZAÇÃO ---
-
 function formatarPreco(v) {
   return v.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
@@ -78,8 +74,6 @@ function renderizarProdutos(lista) {
   el.innerHTML = lista.length ? lista.map(criarCard).join("") : "<p>Nenhum produto encontrado.</p>";
 }
 
-// --- FILTROS ---
-
 let categoriaAtiva = "todos";
 
 function filtrar(categoria, botao) {
@@ -88,8 +82,6 @@ function filtrar(categoria, botao) {
   if (botao) botao.classList.add("ativo");
   renderizarProdutos(PRODUTOS.filter(p => categoriaAtiva === "todos" || p.categoria === categoriaAtiva));
 }
-
-// --- CARRINHO PAGE ---
 
 function renderizarCarrinho() {
   const el = document.getElementById("itensCarrinho");
@@ -137,16 +129,12 @@ function finalizarCompra() {
   }
 }
 
-// --- MEMBRO ---
-
 function cadastrarMembro() {
   const nome  = document.getElementById("membroNome")?.value.trim();
   const email = document.getElementById("membroEmail")?.value.trim();
   if (!nome || !email) { alert("Preencha nome e e-mail!"); return; }
   alert(`Bem-vindo, ${nome}! Cadastro realizado com sucesso.`);
 }
-
-// --- TOAST ---
 
 let toastTimeout;
 function mostrarToast(msg) {
@@ -161,8 +149,6 @@ function mostrarToast(msg) {
   clearTimeout(toastTimeout);
   toastTimeout = setTimeout(() => toast.classList.remove("visivel"), 3000);
 }
-
-// --- INIT ---
 
 document.addEventListener("DOMContentLoaded", () => {
   atualizarBadge();
